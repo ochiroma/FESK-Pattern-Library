@@ -1,0 +1,32 @@
+{{> header}}
+{{> listpagebreadcrumb}}
+
+				<h1>{{ title }}</h1>
+				{{{ contents }}}
+				<div class="pl-table-of-contents">
+					<h2 class="pl-table-of-contents__title">Table of contents</h2>
+					<ol id="toc" class="pl-table-of-contents__list">
+						{{#each collections.components}}
+						<li class="pl-table-of-contents__item">
+							<a href="#{{ this.title }}">{{ this.title }}</a>
+						</li>
+						{{/each}}
+					</ol>
+				</div>
+				<div class="pl-page-content__main-content">
+					{{#each collections.components}}
+					<div class="pl-item" id="{{ this.title }}">
+						<h2>{{ this.title }}</h2>
+						{{{ this.contents }}}
+						<div class="pl-example">
+							<div class="pl-example__rendered">
+								{{{ this.snippet }}}
+							</div>
+							<div class="pl-example__code">
+								<pre><code class="language-html">{{ this.snippet }}</code></pre>
+							</div>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+{{> footer}}
