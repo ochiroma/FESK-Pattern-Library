@@ -1,4 +1,10 @@
 backend:
   name: FESK
-  repo: ochiroma/FESK-Pattern-Library
-  branch: master
+  repo: ochiroma/FESK-Pattern-Library # Path to your Github repository
+  branch: master # Branch to update
+media_folder: "src/media" # Media files will be stored in the repo under src/media
+public_folder: "/media" # The src attribute for uploaded media will begin with /media
+collections:
+    title: "title" 
+    template: "title"
+    type: "type:
