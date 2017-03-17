@@ -4,10 +4,10 @@ backend:
   branch: master # Branch to update
 media_folder: "src/media" # Media files will be stored in the repo under src/media
 public_folder: "/media" # The src attribute for uploaded media will begin with /media
-collections:
-    label: "FESK" # Used in the UI
-    folder: "src" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "" # {{year}}-{{month}}-{{day}}-{{slug}} Filename template i.e. YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {title: "title", template: "template", type: "type"}
+# collections:
+#     label: "FESK" # Used in the UI
+#     folder: "src" # The path to the folder where the documents are stored
+#     create: true # Allow users to create new documents in this collection
+#     slug: "" # {{year}}-{{month}}-{{day}}-{{slug}} Filename template i.e. YYYY-MM-DD-title.md
+#     fields: # The fields for each document, usually in front matter
+#       - {title: "title", template: "template", type: "type"}
