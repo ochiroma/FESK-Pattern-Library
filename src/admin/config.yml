@@ -5,7 +5,6 @@ backend:
 media_folder: "src/media" # Media files will be stored in the repo under src/media
 public_folder: "/media" # The src attribute for uploaded media will begin with /media
 collections:
-  - name: "fesk" # Used in routes, e.g. /admin/collections/blog
     label: "FESK" # Used in the UI
     folder: "src" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
