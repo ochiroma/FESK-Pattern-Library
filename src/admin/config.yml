@@ -7,4 +7,4 @@ public_folder: "/media" # The src attribute for uploaded media will begin with /
 collections:
     title: "title" 
     template: "title"
-    type: "type:
+    type: "type"
